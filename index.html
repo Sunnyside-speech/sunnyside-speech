@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunnyside Speech | Online Speech Therapy in Vancouver & BC</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            butter: {
+              50: '#FFFDF5',
+              100: '#FEFBE8',
+              200: '#FEF3C7',
+              300: '#FDE68A',
+              400: '#FCD34D',
+              500: '#F59E0B',
+              600: '#D97706',
+            },
+            yolk: {
+              300: '#FBBF24',
+              400: '#F59E0B',
+              500: '#EA580C',
+            },
+            cream: {
+              50: '#FAF8F5',
+              100: '#F5F2EB',
+              200: '#ECE6D9',
+            },
+            charcoal: {
+              800: '#2A2A28',
+              700: '#3F3E3B',
+              500: '#716E68',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['Quicksand', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft': '0 8px 30px rgba(245, 158, 11, 0.08)',
+            'card': '0 4px 24px rgba(63, 62, 59, 0.05)',
+            'glow': '0 0 25px rgba(253, 230, 138, 0.6)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF8F5;
+      color: #3F3E3B;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-brand {
+      font-family: 'Quicksand', sans-serif;
+    }
+    @keyframes gentleBob {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-6px) rotate(2deg); }
+    }
+    .bob-animation {
+      animation: gentleBob 4.5s ease-in-out infinite;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.04); opacity: 1; }
+    }
+    .glow-pulse {
+      animation: pulseGlow 3s ease-in-out infinite;
+    }
+    /* Hide scrollbars for neat carousel if needed */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-butter-200 selection:text-charcoal-800">
+
+  <div class="bg-butter-200/70 border-b border-butter-300/60 px-4 py-2 text-center text-xs sm:text-sm font-medium text-charcoal-700 flex items-center justify-center gap-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+    <span>Accepting new pediatric & adult clients across <strong>Vancouver, Burnaby, Richmond, Surrey & all of BC</strong></span>
+    <span class="hidden md:inline text-charcoal-500">| Extended health insurance eligible</span>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-[#FAF8F5]/90 backdrop-blur-md border-b border-amber-100/80 transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-amber-400 rounded-2xl p-1">
+        <!-- SVG Smiley Egg Logo -->
+        <div class="relative w-12 h-12 transition-transform duration-300 group-hover:scale-105">
+          <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+            <!-- Egg White with organic blob shape -->
+            <path d="M50 8 C75 8, 94 28, 92 53 C90 78, 76 94, 49 92 C23 90, 8 74, 9 49 C10 24, 25 8, 50 8 Z" fill="#FFFFFF" stroke="#FDE68A" stroke-width="2.5" />
+            <!-- Yolk -->
+            <circle cx="50" cy="50" r="28" fill="#FCD34D" />
+            <circle cx="48" cy="48" r="26" fill="#FBBF24" />
+            <circle cx="44" cy="42" r="6" fill="#FDE68A" opacity="0.6" />
+            <!-- Cheerful Smile & Eyes -->
+            <circle cx="41" cy="48" r="3.2" fill="#3F3E3B" />
+            <circle cx="59" cy="48" r="3.2" fill="#3F3E3B" />
+            <!-- Rosy Cheeks -->
+            <ellipse cx="36" cy="53" rx="3.5" ry="2" fill="#F87171" opacity="0.5" />
+            <ellipse cx="64" cy="53" rx="3.5" ry="2" fill="#F87171" opacity="0.5" />
+            <!-- Happy Mouth Curve -->
+            <path d="M43 54 Q50 62 57 54" fill="none" stroke="#3F3E3B" stroke-width="2.8" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div>
+          <span class="font-brand font-bold text-xl sm:text-2xl tracking-tight text-charcoal-800 flex items-center">
+            Sunnyside<span class="text-amber-500 ml-1">Speech</span>
+          </span>
+          <span class="block text-[11px] font-semibold uppercase tracking-wider text-charcoal-500 -mt-1">
+            Online Therapy &bull; Melissa Wang, SLP
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center space-x-7 font-medium text-sm text-charcoal-700">
+        <a href="#about" class="hover:text-amber-600 transition-colors py-1">About Melissa</a>
+        <a href="#services" class="hover:text-amber-600 transition-colors py-1">Services & Approach</a>
+        <a href="#whysunnyside" class="hover:text-amber-600 transition-colors py-1">Why Virtual?</a>
+        <a href="#faq" class="hover:text-amber-600 transition-colors py-1">FAQ</a>
+        <a href="#contact" class="hover:text-amber-600 transition-colors py-1">Contact</a>
+      </nav>
+
+      <!-- Header CTA Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <button onclick="openBookingModal('Free 15-Min Phone Consultation')" class="bg-amber-400 hover:bg-amber-500 text-charcoal-800 font-semibold px-5 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5 text-sm flex items-center gap-2">
+          <span>Book Free Consult</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex lg:hidden items-center">
+        <button id="mobileMenuBtn" aria-label="Toggle menu" class="p-2 rounded-xl text-charcoal-700 hover:bg-butter-100 focus:outline-none">
+          <svg id="hamburgerIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-cream-50 border-b border-amber-200/70 px-6 py-5 space-y-4 shadow-xl">
+      <a href="#about" onclick="toggleMobileMenu()" class="block text-base font-semibold text-charcoal-700 hover:text-amber-600">About Melissa Wang</a>
+      <a href="#services" onclick="toggleMobileMenu()" class="block text-base font-semibold text-charcoal-700 hover:text-amber-600">Speech & Language Services</a>
+      <a href="#whysunnyside" onclick="toggleMobileMenu()" class="block text-base font-semibold text-charcoal-700 hover:text-amber-600">Why Virtual Telepractice?</a>
+      <a href="#faq" onclick="toggleMobileMenu()" class="block text-base font-semibold text-charcoal-700 hover:text-amber-600">Frequently Asked Questions</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block text-base font-semibold text-charcoal-700 hover:text-amber-600">Contact Us</a>
+      <div class="pt-2 border-t border-amber-100 flex flex-col gap-2">
+        <button onclick="toggleMobileMenu(); openBookingModal('Free 15-Min Phone Consultation');" class="w-full text-center bg-amber-400 hover:bg-amber-500 text-charcoal-800 font-bold py-3 rounded-xl shadow-sm text-sm">
+          Book Free 15-Min Consultation
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="relative overflow-hidden pt-10 pb-20 md:py-24 bg-gradient-to-b from-butter-100/60 via-[#FAF8F5] to-[#FAF8F5]">
+      <!-- Background Ambient Blur Circles -->
+      <div class="absolute -top-16 -left-16 w-80 h-80 rounded-full bg-butter-200/50 filter blur-3xl pointer-events-none"></div>
+      <div class="absolute top-1/3 -right-20 w-96 h-96 rounded-full bg-amber-200/30 filter blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Hero Content -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <!-- Badges -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-butter-300/80 shadow-sm text-xs font-semibold text-amber-700">
+              <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+              Vancouver, Burnaby, Richmond & All BC Communities
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-brand tracking-tight text-charcoal-800 leading-[1.15]">
+              Brightening every voice, <br class="hidden sm:inline">
+              <span class="relative inline-block text-amber-600">
+                one sunny milestone
+                <svg class="absolute left-0 -bottom-2 w-full h-3 text-amber-300/70" viewBox="0 0 200 12" fill="none" preserveAspectRatio="none">
+                  <path d="M2 9 C50 2, 150 2, 198 9" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+              </span>
+              at a time.
+            </h1>
+
+            <p class="text-base sm:text-lg text-charcoal-700/90 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              Welcome to <strong>Sunnyside Speech</strong>, an online speech therapy practice dedicated to children, adolescents, and families. Led by licensed SLP <strong>Melissa Wang</strong>, we bring warm, play-infused, evidence-based speech therapy right to your living room.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <button onclick="openBookingModal('Free 15-Min Phone Consultation')" class="w-full sm:w-auto bg-amber-400 hover:bg-amber-500 text-charcoal-800 font-bold px-7 py-3.5 rounded-full shadow-soft hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 text-base flex items-center justify-center gap-2">
+                <span>Book Free 15-Min Consultation</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              </button>
+              
+              <a href="#services" class="w-full sm:w-auto bg-white hover:bg-cream-100 text-charcoal-800 font-semibold px-6 py-3.5 rounded-full border border-amber-200 transition-all duration-200 text-center text-base">
+                Explore Speech Services
+              </a>
+            </div>
+
+            <!-- Key Proof Points -->
+            <div class="pt-6 grid grid-cols-3 gap-4 border-t border-amber-100/90 max-w-lg mx-auto lg:mx-0 text-left">
+              <div>
+                <p class="text-xl sm:text-2xl font-bold font-brand text-amber-600">100%</p>
+                <p class="text-xs font-medium text-charcoal-500">Virtual & Cozy at Home</p>
+              </div>
+              <div>
+                <p class="text-xl sm:text-2xl font-bold font-brand text-amber-600">RSLP</p>
+                <p class="text-xs font-medium text-charcoal-500">BC Licensed Practitioner</p>
+              </div>
+              <div>
+                <p class="text-xl sm:text-2xl font-bold font-brand text-amber-600">0 Commute</p>
+                <p class="text-xs font-medium text-charcoal-500">Stress-Free Telehealth</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Hero Illustration & Friendly Mascot Card -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-md">
+              
+              <!-- Soft Glow Backdrop -->
+              <div class="absolute inset-0 bg-butter-200 rounded-3xl transform -rotate-3 scale-95 opacity-60"></div>
+              
+              <!-- Main Card -->
+              <div class="relative bg-white rounded-3xl p-6 sm:p-8 shadow-card border border-amber-100/80">
+                
+                <!-- Mascot Visual Presentation -->
+                <div class="relative bg-gradient-to-b from-butter-100 to-cream-50 rounded-2xl p-6 flex flex-col items-center justify-center border border-butter-200/50">
+                  <div class="bob-animation w-36 h-36 sm:w-44 sm:h-44">
+                    <svg viewBox="0 0 120 120" class="w-full h-full drop-shadow-md">
+                      <!-- Organic Egg White Shape -->
+                      <path d="M60 10 C92 10, 114 34, 110 65 C107 96, 91 114 58 112 C28 110, 8 92 10 60 C11 30, 28 10, 60 10 Z" fill="#FFFFFF" stroke="#FDE68A" stroke-width="3" />
+                      <!-- Golden Yolk -->
+                      <circle cx="60" cy="62" r="34" fill="#FCD34D" />
+                      <circle cx="58" cy="60" r="32" fill="#FBBF24" />
+                      <!-- Shimmer -->
+                      <circle cx="50" cy="50" r="7" fill="#FFFBEB" opacity="0.7" />
+                      <!-- Expressive Happy Eyes with Wink and Sparkle -->
+                      <circle cx="49" cy="59" r="4" fill="#2A2A28" />
+                      <circle cx="71" cy="59" r="4" fill="#2A2A28" />
+                      <!-- Catchlights in eyes -->
+                      <circle cx="47.5" cy="57.5" r="1.3" fill="#FFFFFF" />
+                      <circle cx="69.5" cy="57.5" r="1.3" fill="#FFFFFF" />
+                      <!-- Cheeks -->
+                      <circle cx="41" cy="67" r="4.5" fill="#FCA5A5" opacity="0.65" />
+                      <circle cx="79" cy="67" r="4.5" fill="#FCA5A5" opacity="0.65" />
+                      <!-- Big Friendly Smile -->
+                      <path d="M51 66 Q60 77 69 66" fill="none" stroke="#2A2A28" stroke-width="3.2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  
+                  <span class="mt-3 inline-block px-3 py-1 bg-white rounded-full text-xs font-semibold text-amber-700 shadow-xs border border-amber-200">
+                    Friendly &bull; Playful &bull; Effective
+                  </span>
+                </div>
+
+                <!-- Friendly Micro Quote -->
+                <div class="mt-5 space-y-3">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-butter-200 flex items-center justify-center font-bold text-amber-700 text-sm">
+                      MW
+                    </div>
+                    <div>
+                      <h4 class="text-sm font-bold text-charcoal-800">Melissa Wang, M.Sc., RSLP</h4>
+                      <p class="text-xs text-charcoal-500">Speech-Language Pathologist, BC</p>
+                    </div>
+                  </div>
+                  <p class="text-xs text-charcoal-700 bg-cream-50 p-3 rounded-xl border border-cream-200/60 italic leading-relaxed">
+                    "When speech practice feels like joyful connection rather than hard homework, breakthrough moments happen naturally."
+                  </p>
+                </div>
+
+                <!-- Floating Little Tag -->
+                <div class="absolute -bottom-4 -right-2 bg-white px-4 py-2 rounded-2xl shadow-md border border-butter-200 flex items-center gap-2">
+                  <span class="text-amber-500">☀️</span>
+                  <span class="text-xs font-bold text-charcoal-800">Direct BC Billing & Coverage</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white border-t border-amber-100/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mx-auto text-center mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-butter-100 text-amber-800 text-xs font-semibold uppercase tracking-wider mb-3">
+            About the Clinic
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold font-brand text-charcoal-800">
+            Meet Melissa Wang, Speech-Language Pathologist
+          </h2>
+          <p class="mt-3 text-base text-charcoal-700">
+            Dedicated to helping communicators flourish in Vancouver, the Lower Mainland, and throughout British Columbia.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Bio Portrait / Profile Graphic -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-sm">
+              <div class="absolute -top-3 -left-3 w-full h-full rounded-3xl bg-butter-200"></div>
+              <div class="relative bg-[#FAF8F5] rounded-3xl p-6 sm:p-8 border border-amber-200 shadow-sm text-center">
+                
+                <!-- Avatar Representation -->
+                <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-tr from-amber-200 to-butter-100 p-1.5 shadow-inner mb-4 flex items-center justify-center">
+                  <div class="w-full h-full rounded-full bg-white flex flex-col items-center justify-center overflow-hidden border border-amber-200">
+                    <svg viewBox="0 0 100 100" class="w-20 h-20 text-charcoal-700">
+                      <circle cx="50" cy="38" r="20" fill="#FDE68A" />
+                      <circle cx="43" cy="36" r="2.5" fill="#3F3E3B" />
+                      <circle cx="57" cy="36" r="2.5" fill="#3F3E3B" />
+                      <path d="M46 43 Q50 48 54 43" fill="none" stroke="#3F3E3B" stroke-width="2" stroke-linecap="round" />
+                      <path d="M22 84 C22 66, 35 58, 50 58 C65 58, 78 66, 78 84 Z" fill="#F59E0B" opacity="0.8" />
+                    </svg>
+                  </div>
+                </div>
+
+                <h3 class="text-xl font-bold font-brand text-charcoal-800">Melissa Wang</h3>
+                <p class="text-xs font-semibold text-amber-600 mt-0.5">M.Sc., RSLP | Clinic Founder</p>
+                <div class="mt-3 flex flex-wrap justify-center gap-1.5">
+                  <span class="text-[11px] bg-white px-2.5 py-1 rounded-full border border-amber-200 font-medium text-charcoal-700">CASLPO / BC Reg.</span>
+                  <span class="text-[11px] bg-white px-2.5 py-1 rounded-full border border-amber-200 font-medium text-charcoal-700">Pediatric & Adult</span>
+                  <span class="text-[11px] bg-white px-2.5 py-1 rounded-full border border-amber-200 font-medium text-charcoal-700">Telepractice Expert</span>
+                </div>
+
+                <div class="mt-6 pt-5 border-t border-amber-200/80 text-left space-y-2 text-xs text-charcoal-700">
+                  <div class="flex items-center gap-2">
+                    <span class="text-amber-500 font-bold">✓</span>
+                    <span>English & Conversational Cantonese</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-amber-500 font-bold">✓</span>
+                    <span>Neurodiversity-affirming approach</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-amber-500 font-bold">✓</span>
+                    <span>Partnering closely with caregivers & schools</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Bio Story & Values -->
+          <div class="lg:col-span-7 space-y-5">
+            <h3 class="text-2xl font-bold font-brand text-charcoal-800">
+              "Every person deserves to communicate what's in their heart with joy and ease."
+            </h3>
+
+            <p class="text-charcoal-700 text-sm sm:text-base leading-relaxed">
+              Hello! I'm <strong>Melissa Wang</strong>, a Registered Speech-Language Pathologist. I established <strong>Sunnyside Speech</strong> to reimagine speech therapy as a warm, stress-free experience that fits seamlessly into your family's routine.
+            </p>
+
+            <p class="text-charcoal-700 text-sm sm:text-base leading-relaxed">
+              Navigating bridge traffic across Vancouver, Burnaby, or the North Shore shouldn't be a barrier to exceptional speech care. By conducting sessions online, clients learn in their natural environment where communication matters most—using their favorite toys, books, and familiar family routines.
+            </p>
+
+            <!-- Three Core Pillars -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <div class="p-4 rounded-2xl bg-butter-50 border border-butter-200">
+                <div class="text-amber-500 text-xl mb-1">💛</div>
+                <h4 class="font-bold text-sm text-charcoal-800">Play-Based & Joyful</h4>
+                <p class="text-xs text-charcoal-500 mt-1">Interactive activities and games that keep children eager for each session.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-butter-50 border border-butter-200">
+                <div class="text-amber-500 text-xl mb-1">🌱</div>
+                <h4 class="font-bold text-sm text-charcoal-800">Family-Empowered</h4>
+                <p class="text-xs text-charcoal-500 mt-1">We equip parents and caregivers with actionable tools for daily conversation.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-butter-50 border border-butter-200">
+                <div class="text-amber-500 text-xl mb-1">🎯</div>
+                <h4 class="font-bold text-sm text-charcoal-800">Evidence-Driven</h4>
+                <p class="text-xs text-charcoal-500 mt-1">Science-backed therapies customized around each client's unique interests.</p>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <button onclick="openBookingModal('Free 15-Min Phone Consultation')" class="inline-flex items-center gap-2 bg-charcoal-800 hover:bg-charcoal-700 text-white font-semibold text-sm px-6 py-3 rounded-full transition-all duration-200">
+                <span>Book an Intro Call with Melissa</span>
+                <svg class="w-4 h-4 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="services" class="py-20 bg-cream-50/60 border-t border-amber-100/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-xs font-bold text-amber-700 uppercase tracking-wider bg-butter-200/80 px-3.5 py-1 rounded-full">
+            Clinical Services
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-bold font-brand text-charcoal-800 mt-3">
+            Individualized Speech & Language Care
+          </h2>
+          <p class="text-charcoal-700 text-sm sm:text-base mt-2">
+            Tailored virtual therapy sessions designed around each individual's developmental stage, strengths, and personal goals.
+          </p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Card 1: Articulation & Speech Sound -->
+          <div class="bg-white rounded-3xl p-6 border border-amber-100/90 shadow-card hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-butter-100 flex items-center justify-center text-amber-600 text-2xl mb-4">
+                🗣️
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-brand font-bold text-lg text-charcoal-800">Speech Clarity & Articulation</h3>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-butter-100 text-amber-800">Ages 3+</span>
+              </div>
+              <p class="text-xs sm:text-sm text-charcoal-700/90 leading-relaxed">
+                Support for lisp correction, specific sound substitutions (like /r/, /s/, /l/, /k/), phonological delays, and apraxia of speech to build confident clarity.
+              </p>
+              <ul class="mt-4 space-y-1.5 text-xs text-charcoal-500">
+                <li class="flex items-center gap-2"><span class="text-amber-500">✔</span> Visual & auditory feedback games</li>
+                <li class="flex items-center gap-2"><span class="text-amber-500">✔</span> Motor speech coordination exercises</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-cream-100 flex justify-between items-center">
+              <span class="text-xs font-semibold text-charcoal-500">45-min virtual session</span>
+              <button onclick="openBookingModal('Articulation & Speech Clarity')" class="text-xs font-bold text-amber-600 hover:text-amber-700">Select & Book &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Card 2: Early Language & Late Talkers -->
+          <div class="bg-white rounded-3xl p-6 border border-amber-100/90 shadow-card hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-butter-100 flex items-center justify-center text-amber-600 text-2xl mb-4">
+                🐣
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-brand font-bold text-lg text-charcoal-800">Early Language & Toddlers</h3>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-butter-100 text-amber-800">Ages 1.5 – 4</span>
+              </div>
+              <p class="text-xs sm:text-sm text-charcoal-700/90 leading-relaxed">
+                Play-based parent coaching designed to unlock vocabulary, encourage early two-word combinations, and reduce everyday communication frustration.
+              </p>
+              <ul class="mt-4 space-y-1.5 text-xs text-charcoal-500">
+                <li class="flex items-center gap-2"><span class="text-amber-500">✔</span> Natural daily routine strategies</li>
+                <li class="flex items-center gap-2"><span class="text-amber-500">✔</span> Playful song and gesture integration</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-cream-100 flex justify-between items-center">
+              <span class="text-xs font-semibold text-charcoal-500">Parent-involved therapy</span>
+              <button onclick="openBookingModal('Early Language & Late Talkers')" class="text-xs font-bold text-amber-600 hover:text-amber-700">Select & Book &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Card 3: Social & Pragmatic Communication -->
+          <div class="bg-white rounded-3xl p-6 border border-amber-100/90 shadow-card hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-butter-100 flex items-center justify-center text-amber-600 text-2xl mb-4">
+                🤝
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-brand font-bold text-lg text-charcoal-800">Social Communication</h3>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-butter-100 text-amber-800">School-Age</span>
+              </div>
+              <p class="text-xs sm:text-sm text-charcoal-700/90 leading-relaxed">
+                Neurodiversity-affirming guidance navigating conversational turn-taking, understanding non-literal language, building authentic peer friendships, and self-advocacy.
+              </p>
+              <ul class="mt-4 space-y-1.5 text-xs text-charcoal-500">
+                <li class="flex items-center gap-2"><span class="text-amber-500">✔</span> Real-life scenario problem solving</li>
+                <li class="flex items-center gap-2"><span class="text-amber-500">✔</span> Affirming individual communication styles</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-cream-100 flex justify-between items-center">
+              <span class="text-xs font-semibold text-charcoal-500">45-min virtual session</span>
+              <button onclick="openBookingModal('Social Communication & Pragmatics')" class="text-xs font-bold text-amber-600 hover:text-amber-700">Select & Book &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Card 4: Fluency & Stuttering -->
+          <div class="bg-white rounded-3xl p-6 border border-amber-100/90 shadow-card hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-butter-100 flex items-center justify-center text-amber-600 text-2xl mb-4">
+                🌊
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-brand font-bold text-lg text-charcoal-800">Fluency & Stuttering</h3>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-butter-100 text-amber-800">All Ages</span>
+              </div>
+              <p class="text-xs sm:text-sm text-charcoal-700/90 leading-relaxed">
+                Support for stuttering that balances easy speech shaping techniques with reducing anxiety, promoting positive self-worth, and encouraging smooth expression.
+              </p>
+              <ul class="mt-4 space-y-1.5 text-xs text-charcoal-500">
+                <li class="flex items-center gap-2"><span class="text-amber-500">✔</span> Gentle onset & flow management</li>
+                <li class="flex items-center gap-2"><span class="text-amber-500">✔</span> Confidence & desensitization support</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-cream-100 flex justify-between items-center">
+              <span class="text-xs font-semibold text-charcoal-500">Individualized plans</span>
+              <button onclick="openBookingModal('Fluency & Stuttering')" class="text-xs font-bold text-amber-600 hover:text-amber-700">Select & Book &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Card 5: Comprehensive Speech Assessment -->
+          <div class="bg-white rounded-3xl p-6 border border-amber-100/90 shadow-card hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-butter-100 flex items-center justify-center text-amber-600 text-2xl mb-4">
+                📋
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-brand font-bold text-lg text-charcoal-800">Initial Speech Assessment</h3>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-butter-100 text-amber-800">Comprehensive</span>
+              </div>
+              <p class="text-xs sm:text-sm text-charcoal-700/90 leading-relaxed">
+                In-depth clinical evaluation evaluating expressive/receptive language, articulation, oral mechanics, and a formal written roadmap for parents and schools.
+              </p>
+              <ul class="mt-4 space-y-1.5 text-xs text-charcoal-500">
+                <li class="flex items-center gap-2"><span class="text-amber-500">✔</span> Detailed evaluation report included</li>
+                <li class="flex items-center gap-2"><span class="text-amber-500">✔</span> Personalized home strategy booklet</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-cream-100 flex justify-between items-center">
+              <span class="text-xs font-semibold text-charcoal-500">75–90 min assessment</span>
+              <button onclick="openBookingModal('Comprehensive Speech Assessment')" class="text-xs font-bold text-amber-600 hover:text-amber-700">Select & Book &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Card 6: Parent Consult & Coaching -->
+          <div class="bg-white rounded-3xl p-6 border border-amber-100/90 shadow-card hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-butter-100 flex items-center justify-center text-amber-600 text-2xl mb-4">
+                ☕
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-brand font-bold text-lg text-charcoal-800">Caregiver Coaching</h3>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-butter-100 text-amber-800">Families</span>
+              </div>
+              <p class="text-xs sm:text-sm text-charcoal-700/90 leading-relaxed">
+                Direct one-on-one sessions for parents, grandparents, and guardians wanting expert guidance, IEP advice, or strategies to reinforce progress outside sessions.
+              </p>
+              <ul class="mt-4 space-y-1.5 text-xs text-charcoal-500">
+                <li class="flex items-center gap-2"><span class="text-amber-500">✔</span> School IEP & transition review</li>
+                <li class="flex items-center gap-2"><span class="text-amber-500">✔</span> Practical low-stress strategies</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-cream-100 flex justify-between items-center">
+              <span class="text-xs font-semibold text-charcoal-500">45-min virtual session</span>
+              <button onclick="openBookingModal('Caregiver Coaching & Guidance')" class="text-xs font-bold text-amber-600 hover:text-amber-700">Select & Book &rarr;</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Insurance and Coverage Callout -->
+        <div class="mt-12 bg-butter-100/80 rounded-3xl p-6 sm:p-8 border border-butter-200 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="space-y-1 text-center md:text-left">
+            <h4 class="font-brand font-bold text-lg text-charcoal-800">Extended Health Insurance & Autism Funding (AFU)</h4>
+            <p class="text-xs sm:text-sm text-charcoal-700">
+              Services provided by a Registered Speech-Language Pathologist (RSLP) are widely covered by major BC extended health benefit plans (Pacific Blue Cross, Sun Life, Manulife, Canada Life, Desjardins, etc.).
+            </p>
+          </div>
+          <button onclick="openBookingModal('Free 15-Min Phone Consultation')" class="shrink-0 bg-amber-400 hover:bg-amber-500 text-charcoal-800 font-bold px-5 py-2.5 rounded-full text-xs sm:text-sm transition-colors shadow-xs">
+            Verify Your Coverage With Us
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="whysunnyside" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-butter-100 text-amber-800 text-xs font-semibold">
+              Serving Vancouver & Surrounding Metro Areas
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold font-brand text-charcoal-800">
+              Why Online Speech Therapy is a Game-Changer for Families
+            </h2>
+            <p class="text-charcoal-700 text-sm sm:text-base leading-relaxed">
+              Skip the rush hour traffic along Highway 1, Lions Gate, or Oak Street. Virtual telepractice offers clinical efficacy identical to in-person sessions—while saving your family time and energy.
+            </p>
+
+            <div class="space-y-4 pt-2">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-2xl bg-butter-200 flex items-center justify-center shrink-0 text-amber-800 font-bold">
+                  🏠
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-charcoal-800">Natural Comfort & Higher Generalization</h4>
+                  <p class="text-xs text-charcoal-500 mt-0.5">Kids learn faster when they are at home in familiar surroundings, playing with the exact toys and books they interact with every day.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-2xl bg-butter-200 flex items-center justify-center shrink-0 text-amber-800 font-bold">
+                  ⏱️
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-charcoal-800">Zero Transit, Zero Stress</h4>
+                  <p class="text-xs text-charcoal-500 mt-0.5">Log in with a single click from Vancouver, Burnaby, Richmond, Coquitlam, North Vancouver, or Surrey without battling afternoon rush hours.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-2xl bg-butter-200 flex items-center justify-center shrink-0 text-amber-800 font-bold">
+                  🎮
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-charcoal-800">High-Engagement Digital Tools</h4>
+                  <p class="text-xs text-charcoal-500 mt-0.5">Interactive speech games, split-screen sound drills, and collaborative digital storyboards make therapy something kids look forward to each week.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Interactive Virtual Session Preview -->
+          <div class="lg:col-span-6">
+            <div class="bg-butter-50 rounded-3xl p-6 sm:p-8 border border-butter-200/80 shadow-card">
+              <div class="flex items-center justify-between pb-4 border-b border-butter-200">
+                <div class="flex items-center gap-2">
+                  <span class="w-3 h-3 rounded-full bg-red-400 inline-block"></span>
+                  <span class="w-3 h-3 rounded-full bg-yellow-400 inline-block"></span>
+                  <span class="w-3 h-3 rounded-full bg-green-400 inline-block"></span>
+                  <span class="text-xs font-semibold text-charcoal-500 ml-2">Sunnyside Virtual Telehealth Room</span>
+                </div>
+                <span class="text-[11px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-md">Live Preview</span>
+              </div>
+
+              <!-- Virtual Screen Mockup -->
+              <div class="mt-4 grid grid-cols-2 gap-3 bg-white p-3 rounded-2xl border border-cream-200 shadow-inner">
+                <!-- Therapist Cam -->
+                <div class="bg-butter-100 rounded-xl p-4 flex flex-col items-center justify-center text-center relative overflow-hidden aspect-video">
+                  <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-xs mb-1">
+                    <svg viewBox="0 0 100 100" class="w-8 h-8 text-amber-500">
+                      <circle cx="50" cy="50" r="30" fill="#FCD34D" />
+                      <circle cx="43" cy="48" r="3" fill="#3F3E3B" />
+                      <circle cx="57" cy="48" r="3" fill="#3F3E3B" />
+                      <path d="M45 57 Q50 64 55 57" fill="none" stroke="#3F3E3B" stroke-width="2.5" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <span class="text-[11px] font-bold text-charcoal-800">Melissa Wang, SLP</span>
+                  <span class="text-[9px] text-amber-700 font-medium">Demonstrating Sound /s/</span>
+                  <div class="absolute bottom-1 right-2 text-[10px] text-charcoal-500">🎤 ON</div>
+                </div>
+
+                <!-- Interactive Activity Screen -->
+                <div class="bg-amber-50 rounded-xl p-3 flex flex-col items-center justify-center text-center aspect-video border border-amber-200/60">
+                  <span class="text-2xl mb-1">🌟 🚀 🎈</span>
+                  <span class="text-[11px] font-bold text-charcoal-800">Speech Sound Safari</span>
+                  <span class="text-[9px] text-charcoal-500 mt-0.5">Click & Reveal Target Words!</span>
+                </div>
+              </div>
+
+              <!-- Quick Technology Checklist -->
+              <div class="mt-5 p-4 rounded-2xl bg-white border border-butter-200 text-xs text-charcoal-700 space-y-2">
+                <p class="font-bold text-charcoal-800 flex items-center gap-1.5">
+                  <span>💻</span> What tech do you need at home?
+                </p>
+                <p class="text-charcoal-500 text-[11px]">
+                  All you need is a laptop, iPad, or tablet with a webcam, stable home Wi-Fi, and a quiet spot. No complicated software download required—we send a secure, one-click video link.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="py-20 bg-gradient-to-b from-[#FAF8F5] via-butter-50 to-[#FAF8F5] border-t border-amber-100">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-butter-200 text-amber-800 text-xs font-semibold uppercase tracking-wider mb-2">
+            Online Appointments
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold font-brand text-charcoal-800">
+            Book Your Consultation with Melissa
+          </h2>
+          <p class="mt-2 text-charcoal-700 text-sm sm:text-base">
+            Choose your desired service, pick a convenient date, and take the first step toward speech confidence.
+          </p>
+        </div>
+
+        <!-- Interactive 3-Step Booking Widget Card -->
+        <div class="bg-white rounded-3xl shadow-card border border-amber-200/90 overflow-hidden">
+          
+          <!-- Stepper Header Indicator -->
+          <div class="bg-butter-100/60 p-4 sm:p-6 border-b border-butter-200 flex items-center justify-between">
+            
+            <div class="flex items-center gap-2 sm:gap-4 flex-1">
+              <!-- Step 1 pill -->
+              <div id="stepPill1" class="flex items-center gap-2 text-xs sm:text-sm font-bold text-amber-700">
+                <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-amber-400 text-charcoal-800 flex items-center justify-center text-xs">1</span>
+                <span>Select Service</span>
+              </div>
+              <div class="h-0.5 w-6 sm:w-12 bg-butter-300"></div>
+
+              <!-- Step 2 pill -->
+              <div id="stepPill2" class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-charcoal-500">
+                <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-cream-200 text-charcoal-700 flex items-center justify-center text-xs">2</span>
+                <span>Time & Date</span>
+              </div>
+              <div class="h-0.5 w-6 sm:w-12 bg-cream-200"></div>
+
+              <!-- Step 3 pill -->
+              <div id="stepPill3" class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-charcoal-500">
+                <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-cream-200 text-charcoal-700 flex items-center justify-center text-xs">3</span>
+                <span>Details</span>
+              </div>
+            </div>
+
+            <div class="hidden md:flex items-center gap-2 text-xs text-amber-800 font-semibold bg-white px-3 py-1.5 rounded-full border border-amber-200">
+              <span>🛡️ Secure & Private</span>
+            </div>
+          </div>
+
+          <!-- Step Content Wrapper -->
+          <div class="p-6 sm:p-8">
+            
+            <!-- STEP 1: Select Service -->
+            <div id="step1View" class="space-y-4">
+              <h3 class="font-brand font-bold text-lg text-charcoal-800 mb-2">Select a Service Type</h3>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="serviceSelectionList">
+                
+                <label class="relative flex p-4 rounded-2xl border-2 border-amber-400 bg-butter-50/70 cursor-pointer hover:border-amber-400 transition-all">
+                  <input type="radio" name="serviceOption" value="Free 15-Min Phone Consultation" class="mt-1 text-amber-500 focus:ring-amber-400" checked onchange="handleServiceChange(this)">
+                  <div class="ml-3">
+                    <span class="block text-sm font-bold text-charcoal-800">Free 15-Min Phone Consultation</span>
+                    <span class="block text-xs text-charcoal-500 mt-1">Discuss concerns, questions, and fit before committing. No obligation.</span>
+                    <span class="inline-block mt-2 text-xs font-bold text-amber-700 bg-white px-2 py-0.5 rounded border border-amber-200">Complimentary &bull; 15 mins</span>
+                  </div>
+                </label>
+
+                <label class="relative flex p-4 rounded-2xl border-2 border-cream-200 hover:border-amber-300 transition-all cursor-pointer">
+                  <input type="radio" name="serviceOption" value="Comprehensive Speech Assessment" class="mt-1 text-amber-500 focus:ring-amber-400" onchange="handleServiceChange(this)">
+                  <div class="ml-3">
+                    <span class="block text-sm font-bold text-charcoal-800">Comprehensive Speech Assessment</span>
+                    <span class="block text-xs text-charcoal-500 mt-1">Standardized evaluations, detailed clinical written report & therapy plan.</span>
+                    <span class="inline-block mt-2 text-xs font-bold text-amber-700 bg-cream-100 px-2 py-0.5 rounded">75-90 mins &bull; BC Benefits Eligible</span>
+                  </div>
+                </label>
+
+                <label class="relative flex p-4 rounded-2xl border-2 border-cream-200 hover:border-amber-300 transition-all cursor-pointer">
+                  <input type="radio" name="serviceOption" value="Individual Speech Therapy Session" class="mt-1 text-amber-500 focus:ring-amber-400" onchange="handleServiceChange(this)">
+                  <div class="ml-3">
+                    <span class="block text-sm font-bold text-charcoal-800">Individual Speech Therapy Session</span>
+                    <span class="block text-xs text-charcoal-500 mt-1">Direct telepractice session for articulation, stuttering, or expressive language.</span>
+                    <span class="inline-block mt-2 text-xs font-bold text-amber-700 bg-cream-100 px-2 py-0.5 rounded">45 mins &bull; BC Benefits Eligible</span>
+                  </div>
+                </label>
+
+                <label class="relative flex p-4 rounded-2xl border-2 border-cream-200 hover:border-amber-300 transition-all cursor-pointer">
+                  <input type="radio" name="serviceOption" value="Parent Strategy & Coaching" class="mt-1 text-amber-500 focus:ring-amber-400" onchange="handleServiceChange(this)">
+                  <div class="ml-3">
+                    <span class="block text-sm font-bold text-charcoal-800">Parent Strategy & Coaching Session</span>
+                    <span class="block text-xs text-charcoal-500 mt-1">Targeted guidance for late talkers, home routines, or school collaboration.</span>
+                    <span class="inline-block mt-2 text-xs font-bold text-amber-700 bg-cream-100 px-2 py-0.5 rounded">45 mins &bull; BC Benefits Eligible</span>
+                  </div>
+                </label>
+
+              </div>
+
+              <div class="mt-8 flex justify-end">
+                <button type="button" onclick="goToStep(2)" class="bg-amber-400 hover:bg-amber-500 text-charcoal-800 font-bold px-7 py-3 rounded-full text-sm flex items-center gap-2 transition-all shadow-sm">
+                  <span>Continue to Date & Time</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 2: Date & Time Picker -->
+            <div id="step2View" class="hidden space-y-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h3 class="font-brand font-bold text-lg text-charcoal-800">Select Date & Preferred Time Slot</h3>
+                  <p class="text-xs text-charcoal-500">Pacific Time (Vancouver & Lower Mainland)</p>
+                </div>
+                <span class="text-xs bg-butter-100 text-amber-800 font-semibold px-3 py-1 rounded-full" id="selectedServiceSummary">
+                  Free 15-Min Phone Consultation
+                </span>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Interactive Date Selector -->
+                <div>
+                  <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-2">Available Dates (Upcoming 2 Weeks)</label>
+                  <div class="grid grid-cols-3 sm:grid-cols-4 gap-2" id="dateSlotsContainer">
+                    <!-- Javascript populates dates -->
+                  </div>
+                </div>
+
+                <!-- Interactive Time Slots -->
+                <div>
+                  <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-2">Available Times</label>
+                  <div class="grid grid-cols-2 sm:grid-cols-3 gap-2" id="timeSlotsContainer">
+                    <button type="button" onclick="selectTimeSlot(this, '9:30 AM')" class="time-slot-btn py-2.5 px-3 rounded-xl border border-cream-200 text-xs font-semibold text-charcoal-700 hover:border-amber-400 bg-white">9:30 AM</button>
+                    <button type="button" onclick="selectTimeSlot(this, '10:45 AM')" class="time-slot-btn py-2.5 px-3 rounded-xl border border-cream-200 text-xs font-semibold text-charcoal-700 hover:border-amber-400 bg-white">10:45 AM</button>
+                    <button type="button" onclick="selectTimeSlot(this, '1:15 PM')" class="time-slot-btn py-2.5 px-3 rounded-xl border border-cream-200 text-xs font-semibold text-charcoal-700 hover:border-amber-400 bg-white">1:15 PM</button>
+                    <button type="button" onclick="selectTimeSlot(this, '2:30 PM')" class="time-slot-btn py-2.5 px-3 rounded-xl border-2 border-amber-400 text-xs font-bold text-amber-800 bg-butter-100">2:30 PM</button>
+                    <button type="button" onclick="selectTimeSlot(this, '3:45 PM')" class="time-slot-btn py-2.5 px-3 rounded-xl border border-cream-200 text-xs font-semibold text-charcoal-700 hover:border-amber-400 bg-white">3:45 PM</button>
+                    <button type="button" onclick="selectTimeSlot(this, '5:00 PM')" class="time-slot-btn py-2.5 px-3 rounded-xl border border-cream-200 text-xs font-semibold text-charcoal-700 hover:border-amber-400 bg-white">5:00 PM</button>
+                  </div>
+                  <p class="text-[11px] text-charcoal-500 mt-2">✨ Need a morning before-school or weekend time? Mention it in notes!</p>
+                </div>
+              </div>
+
+              <div class="mt-8 flex justify-between items-center pt-4 border-t border-cream-100">
+                <button type="button" onclick="goToStep(1)" class="text-charcoal-600 hover:text-charcoal-800 text-sm font-semibold flex items-center gap-1">
+                  &larr; Back
+                </button>
+                <button type="button" onclick="goToStep(3)" class="bg-amber-400 hover:bg-amber-500 text-charcoal-800 font-bold px-7 py-3 rounded-full text-sm flex items-center gap-2 transition-all shadow-sm">
+                  <span>Continue to Details</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 3: Client Details Form -->
+            <div id="step3View" class="hidden space-y-6">
+              <div>
+                <h3 class="font-brand font-bold text-lg text-charcoal-800">Your Contact & Family Information</h3>
+                <p class="text-xs text-charcoal-500">Appointments are held via secure telehealth link emailed upon booking.</p>
+              </div>
+
+              <form id="bookingForm" onsubmit="submitBooking(event)" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1">Parent / Client Full Name *</label>
+                    <input type="text" id="bookingName" required placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-2.5 rounded-xl border border-cream-200 text-sm focus:ring-2 focus:ring-amber-400 focus:outline-none bg-cream-50/50">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1">Email Address *</label>
+                    <input type="email" id="bookingEmail" required placeholder="sarah@example.ca" class="w-full px-4 py-2.5 rounded-xl border border-cream-200 text-sm focus:ring-2 focus:ring-amber-400 focus:outline-none bg-cream-50/50">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1">Phone Number *</label>
+                    <input type="tel" id="bookingPhone" required placeholder="(604) 555-0199" class="w-full px-4 py-2.5 rounded-xl border border-cream-200 text-sm focus:ring-2 focus:ring-amber-400 focus:outline-none bg-cream-50/50">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1">Location / City in BC *</label>
+                    <select id="bookingCity" required class="w-full px-3 py-2.5 rounded-xl border border-cream-200 text-sm focus:ring-2 focus:ring-amber-400 focus:outline-none bg-cream-50/50">
+                      <option value="Vancouver">Vancouver</option>
+                      <option value="Burnaby">Burnaby</option>
+                      <option value="Richmond">Richmond</option>
+                      <option value="Surrey">Surrey / Delta</option>
+                      <option value="North/West Vancouver">North or West Vancouver</option>
+                      <option value="Tri-Cities (Coquitlam/Port Moody)">Tri-Cities (Coquitlam/Port Moody)</option>
+                      <option value="Other BC Community">Other BC Community</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1">Client / Child's Age</label>
+                    <input type="text" id="bookingAge" placeholder="e.g. 4 years old, or Adult" class="w-full px-4 py-2.5 rounded-xl border border-cream-200 text-sm focus:ring-2 focus:ring-amber-400 focus:outline-none bg-cream-50/50">
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1">Primary Speech Goals or Concerns</label>
+                  <textarea id="bookingNotes" rows="3" placeholder="Tell Melissa a little about what you'd like support with (e.g. late speech, sounds /r/ and /th/, stuttering, social skills)..." class="w-full px-4 py-2.5 rounded-xl border border-cream-200 text-sm focus:ring-2 focus:ring-amber-400 focus:outline-none bg-cream-50/50"></textarea>
+                </div>
+
+                <div class="p-3 bg-butter-50 rounded-xl border border-butter-200 text-xs text-charcoal-700 flex items-center gap-2">
+                  <span>📅</span>
+                  <span id="bookingSummaryLine">Selected: Free 15-Min Phone Consultation on Tuesday at 2:30 PM (PT)</span>
+                </div>
+
+                <div class="mt-6 flex justify-between items-center pt-4 border-t border-cream-100">
+                  <button type="button" onclick="goToStep(2)" class="text-charcoal-600 hover:text-charcoal-800 text-sm font-semibold flex items-center gap-1">
+                    &larr; Back
+                  </button>
+                  <button type="submit" class="bg-amber-400 hover:bg-amber-500 text-charcoal-800 font-bold px-8 py-3.5 rounded-full text-sm flex items-center gap-2 transition-all shadow-md">
+                    <span>Confirm & Book Appointment</span>
+                    <span class="text-base">✨</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- STEP 4: Friendly Confirmation Modal/View -->
+            <div id="stepConfirmedView" class="hidden text-center py-8 space-y-4">
+              <div class="w-20 h-20 mx-auto rounded-full bg-butter-200 flex items-center justify-center text-3xl">
+                🍳
+              </div>
+              <h3 class="text-2xl font-bold font-brand text-charcoal-800">You're All Set on the Sunny Side!</h3>
+              <p class="text-sm text-charcoal-700 max-w-md mx-auto" id="confirmationDetailsText">
+                Thank you! We've received your booking request for a consultation with Melissa Wang. A confirmation email and secure telehealth link have been queued.
+              </p>
+              <div class="p-4 bg-cream-50 rounded-2xl max-w-sm mx-auto border border-cream-200 text-left text-xs space-y-1.5 text-charcoal-700">
+                <div><strong>Service:</strong> <span id="confirmService">Consultation</span></div>
+                <div><strong>When:</strong> <span id="confirmDateTime">Upcoming Slot</span></div>
+                <div><strong>Clinician:</strong> Melissa Wang, M.Sc., RSLP</div>
+              </div>
+              <div class="pt-4">
+                <button type="button" onclick="resetBooking()" class="bg-cream-100 hover:bg-cream-200 text-charcoal-800 font-semibold px-6 py-2.5 rounded-full text-xs transition-colors">
+                  Schedule Another or Modify
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-white border-t border-amber-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-xl mx-auto mb-12">
+          <span class="text-xs font-bold text-amber-700 uppercase tracking-wider bg-butter-100 px-3 py-1 rounded-full">
+            Answers & Clarity
+          </span>
+          <h2 class="text-3xl font-bold font-brand text-charcoal-800 mt-3">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-charcoal-700 text-sm mt-1">Everything you need to know about online therapy and our clinic.</p>
+        </div>
+
+        <div class="space-y-3" id="faqAccordion">
+          
+          <!-- Question 1 -->
+          <div class="border border-cream-200 rounded-2xl overflow-hidden transition-all bg-cream-50/40">
+            <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex items-center justify-between font-bold text-charcoal-800 text-sm sm:text-base focus:outline-none">
+              <span>How does online speech therapy work for young children?</span>
+              <span class="faq-icon text-amber-600 transform transition-transform duration-200 font-normal text-xl">+</span>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-charcoal-700 leading-relaxed border-t border-cream-200/50 pt-3">
+              Virtual telepractice with young children blends direct screen interaction (interactive games, digital tokens, picture naming) with parent coaching. You'll be right beside your child or actively participating with their real toys and games at home, which makes the skills stick much faster in daily routine!
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="border border-cream-200 rounded-2xl overflow-hidden transition-all bg-cream-50/40">
+            <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex items-center justify-between font-bold text-charcoal-800 text-sm sm:text-base focus:outline-none">
+              <span>Are your speech therapy sessions covered by extended health insurance in BC?</span>
+              <span class="faq-icon text-amber-600 transform transition-transform duration-200 font-normal text-xl">+</span>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-charcoal-700 leading-relaxed border-t border-cream-200/50 pt-3">
+              Yes! Melissa Wang is a fully Registered Speech-Language Pathologist (RSLP) in British Columbia. Most extended health plans (such as Pacific Blue Cross, Sun Life, Manulife, Canada Life) cover speech-language pathology services. After each session, you receive an official itemized receipt with license numbers for easy reimbursement. We also assist with BC Autism Funding Unit (AFU) billing.
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="border border-cream-200 rounded-2xl overflow-hidden transition-all bg-cream-50/40">
+            <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex items-center justify-between font-bold text-charcoal-800 text-sm sm:text-base focus:outline-none">
+              <span>What geographical areas in British Columbia do you serve?</span>
+              <span class="faq-icon text-amber-600 transform transition-transform duration-200 font-normal text-xl">+</span>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-charcoal-700 leading-relaxed border-t border-cream-200/50 pt-3">
+              Because Sunnyside Speech operates 100% online, we work with clients anywhere across British Columbia! While a large portion of our families reside in Vancouver, Burnaby, Richmond, Surrey, North Vancouver, West Vancouver, and the Tri-Cities, we warmly welcome families in Victoria, the Okanagan, and remote BC communities who need high-quality speech therapy.
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="border border-cream-200 rounded-2xl overflow-hidden transition-all bg-cream-50/40">
+            <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex items-center justify-between font-bold text-charcoal-800 text-sm sm:text-base focus:outline-none">
+              <span>What happens during the free 15-minute consultation?</span>
+              <span class="faq-icon text-amber-600 transform transition-transform duration-200 font-normal text-xl">+</span>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-charcoal-700 leading-relaxed border-t border-cream-200/50 pt-3">
+              It is a warm, casual phone or video chat with Melissa. You'll share what prompted you to seek speech therapy, your child's age and milestones, and what goals matter most. Melissa will share whether teletherapy is suitable and explain next steps—no pressure or commitment required.
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="border border-cream-200 rounded-2xl overflow-hidden transition-all bg-cream-50/40">
+            <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex items-center justify-between font-bold text-charcoal-800 text-sm sm:text-base focus:outline-none">
+              <span>Do I need a doctor's referral to get started?</span>
+              <span class="faq-icon text-amber-600 transform transition-transform duration-200 font-normal text-xl">+</span>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-charcoal-700 leading-relaxed border-t border-cream-200/50 pt-3">
+              No referral is legally required to see a Speech-Language Pathologist in BC. You can book directly with us at any time. (Note: A handful of extended health insurance providers may require a doctor's note purely for claims reimbursement, so please check your specific benefits plan handbook).
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-cream-50/80 border-t border-amber-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Left Info -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-butter-200 text-amber-800 text-xs font-semibold">
+              Get in Touch
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold font-brand text-charcoal-800">
+              Have a question? We're here with a friendly answer.
+            </h2>
+            <p class="text-charcoal-700 text-sm leading-relaxed">
+              Whether you're curious about developmental communication milestones, scheduling, or teletherapy setup, feel free to send a note or request a callback.
+            </p>
+
+            <div class="space-y-4 pt-2">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-white border border-amber-200 flex items-center justify-center text-amber-600">
+                  📍
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-charcoal-800 uppercase tracking-wider">Clinic Base & Service Area</h4>
+                  <p class="text-xs text-charcoal-600">Online across Vancouver, Burnaby & all British Columbia communities</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-white border border-amber-200 flex items-center justify-center text-amber-600">
+                  ✉️
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-charcoal-800 uppercase tracking-wider">Direct Email</h4>
+                  <p class="text-xs text-charcoal-600">hello@sunnysidespeech.ca</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-white border border-amber-200 flex items-center justify-center text-amber-600">
+                  📞
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-charcoal-800 uppercase tracking-wider">Phone & Inquiries</h4>
+                  <p class="text-xs text-charcoal-600">(604) 330-EGGY / (604) 330-3449</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-white border border-amber-200 flex items-center justify-center text-amber-600">
+                  ⏰
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-charcoal-800 uppercase tracking-wider">Clinic Hours</h4>
+                  <p class="text-xs text-charcoal-600">Monday &ndash; Friday: 8:30 AM &ndash; 6:00 PM PST<br>Saturday: Morning sessions by appointment</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-white border border-amber-200/80 shadow-xs flex items-center gap-3">
+              <span class="text-2xl">🍳</span>
+              <p class="text-xs text-charcoal-700">
+                <strong>Looking for Melissa?</strong> You will always speak directly with Melissa Wang—not an automated answering desk.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Contact Right Interactive Form -->
+          <div class="lg:col-span-7">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-card border border-amber-200/90">
+              <h3 class="font-brand font-bold text-xl text-charcoal-800 mb-1">Send Sunnyside a Message</h3>
+              <p class="text-xs text-charcoal-500 mb-6">Melissa typically replies within 1 business day.</p>
+
+              <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1">Your Name *</label>
+                    <input type="text" required placeholder="First and last name" class="w-full px-4 py-2.5 rounded-xl border border-cream-200 text-sm focus:ring-2 focus:ring-amber-400 focus:outline-none bg-cream-50/40">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1">Email Address *</label>
+                    <input type="email" required placeholder="you@domain.ca" class="w-full px-4 py-2.5 rounded-xl border border-cream-200 text-sm focus:ring-2 focus:ring-amber-400 focus:outline-none bg-cream-50/40">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1">Phone Number</label>
+                    <input type="tel" placeholder="(604) 000-0000" class="w-full px-4 py-2.5 rounded-xl border border-cream-200 text-sm focus:ring-2 focus:ring-amber-400 focus:outline-none bg-cream-50/40">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1">Preferred Contact Method</label>
+                    <select class="w-full px-3 py-2.5 rounded-xl border border-cream-200 text-sm focus:ring-2 focus:ring-amber-400 focus:outline-none bg-cream-50/40">
+                      <option>Email</option>
+                      <option>Phone Call</option>
+                      <option>Text / SMS</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1">What can we help you with? *</label>
+                  <textarea rows="4" required placeholder="Tell us a little about your situation or any questions you have..." class="w-full px-4 py-2.5 rounded-xl border border-cream-200 text-sm focus:ring-2 focus:ring-amber-400 focus:outline-none bg-cream-50/40"></textarea>
+                </div>
+
+                <!-- Custom inline feedback element instead of alert() -->
+                <div id="contactSuccessMsg" class="hidden p-3 bg-emerald-50 text-emerald-800 rounded-xl border border-emerald-200 text-xs font-medium">
+                  ✨ Thank you! Melissa has received your message and will get back to you shortly.
+                </div>
+
+                <button type="submit" class="w-full bg-amber-400 hover:bg-amber-500 text-charcoal-800 font-bold py-3.5 rounded-full text-sm transition-all shadow-sm">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="py-14 bg-butter-200/50 border-t border-amber-200">
+      <div class="max-w-4xl mx-auto px-4 text-center space-y-4">
+        <h3 class="text-2xl sm:text-3xl font-bold font-brand text-charcoal-800">
+          Ready to make speech therapy a bright spot in your week?
+        </h3>
+        <p class="text-charcoal-700 text-sm max-w-xl mx-auto">
+          Start with a zero-pressure, 15-minute phone consultation with Melissa to see how our virtual approach can benefit your family.
+        </p>
+        <div class="pt-2">
+          <button onclick="openBookingModal('Free 15-Min Phone Consultation')" class="bg-charcoal-800 hover:bg-charcoal-700 text-white font-bold px-8 py-3.5 rounded-full text-sm shadow-md transition-all inline-flex items-center gap-2">
+            <span>Schedule Free 15-Min Consultation</span>
+            <span class="text-amber-400">☀️</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t border-cream-200 pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-cream-100">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9">
+            <svg viewBox="0 0 100 100" class="w-full h-full">
+              <path d="M50 10 C75 10, 92 28, 90 53 C88 78, 74 92, 49 90 C23 88, 10 74, 11 49 C12 24, 25 10, 50 10 Z" fill="#FDE68A" />
+              <circle cx="50" cy="50" r="24" fill="#F59E0B" />
+              <circle cx="43" cy="48" r="2.5" fill="#FFFFFF" />
+              <circle cx="57" cy="48" r="2.5" fill="#FFFFFF" />
+              <path d="M45 54 Q50 59 55 54" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div>
+            <span class="font-brand font-bold text-lg text-charcoal-800">Sunnyside Speech</span>
+            <p class="text-[11px] text-charcoal-500">Melissa Wang, M.Sc., RSLP &bull; Online Speech Therapy Vancouver & BC</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-6 text-xs font-semibold text-charcoal-600">
+          <a href="#about" class="hover:text-amber-600">About</a>
+          <a href="#services" class="hover:text-amber-600">Services</a>
+          <a href="#booking" class="hover:text-amber-600">Book Online</a>
+          <a href="#faq" class="hover:text-amber-600">FAQ</a>
+          <a href="#contact" class="hover:text-amber-600">Contact</a>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-charcoal-500 gap-3">
+        <p>&copy; <span id="currentYear"></span> Sunnyside Speech Therapy. All rights reserved. Owned and operated by Melissa Wang, Speech-Language Pathologist.</p>
+        <p>Serving Vancouver, Burnaby, Richmond, Surrey, Tri-Cities & British Columbia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set dynamic current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburgerIcon = document.getElementById('hamburgerIcon');
+    const closeIcon = document.getElementById('closeIcon');
+
+    function toggleMobileMenu() {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        hamburgerIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      }
+    }
+    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+    // FAQ Accordion Toggle
+    function toggleFaq(buttonElement) {
+      const parent = buttonElement.parentElement;
+      const content = parent.querySelector('.faq-content');
+      const icon = buttonElement.querySelector('.faq-icon');
+      const isOpen = !content.classList.contains('hidden');
+
+      // Close other accordions for clean single view
+      document.querySelectorAll('#faqAccordion .faq-content').forEach(c => c.classList.add('hidden'));
+      document.querySelectorAll('#faqAccordion .faq-icon').forEach(i => {
+        i.textContent = '+';
+        i.classList.remove('rotate-45');
+      });
+
+      if (!isOpen) {
+        content.classList.remove('hidden');
+        icon.textContent = '−';
+      }
+    }
+
+    // Interactive Booking State Management
+    const bookingState = {
+      service: 'Free 15-Min Phone Consultation',
+      date: '',
+      time: '2:30 PM',
+      name: '',
+      email: '',
+      phone: '',
+      city: 'Vancouver',
+      age: '',
+      notes: ''
+    };
+
+    // Populate dynamic upcoming dates for the calendar
+    function populateUpcomingDates() {
+      const container = document.getElementById('dateSlotsContainer');
+      container.innerHTML = '';
+      
+      const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      
+      const today = new Date();
+      let added = 0;
+      let offset = 1; // start tomorrow
+
+      while (added < 8) {
+        const d = new Date();
+        d.setDate(today.getDate() + offset);
+        offset++;
+
+        // Exclude Sundays for clinic
+        if (d.getDay() === 0) continue;
+
+        const dayName = days[d.getDay()];
+        const monthName = months[d.getMonth()];
+        const dateNum = d.getDate();
+        const dateStr = `${dayName}, ${monthName} ${dateNum}`;
+
+        const isDefault = added === 1; // pick 2nd available day as default
+        if (isDefault) bookingState.date = dateStr;
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = `date-slot-btn py-2 px-1 rounded-xl text-center border transition-all text-xs font-semibold ${
+          isDefault ? 'border-2 border-amber-400 bg-butter-100 text-amber-800' : 'border-cream-200 bg-white text-charcoal-700 hover:border-amber-300'
+        }`;
+        btn.innerHTML = `<span class="block text-[10px] uppercase text-charcoal-500">${dayName}</span><span class="block text-sm font-bold">${dateNum}</span><span class="text-[9px] text-charcoal-500">${monthName}</span>`;
+        
+        btn.onclick = () => {
+          document.querySelectorAll('.date-slot-btn').forEach(b => {
+            b.className = 'date-slot-btn py-2 px-1 rounded-xl text-center border transition-all text-xs font-semibold border-cream-200 bg-white text-charcoal-700 hover:border-amber-300';
+          });
+          btn.className = 'date-slot-btn py-2 px-1 rounded-xl text-center border-2 border-amber-400 bg-butter-100 text-amber-800 transition-all text-xs font-semibold';
+          bookingState.date = dateStr;
+          updateBookingSummary();
+        };
+
+        container.appendChild(btn);
+        added++;
+      }
+      updateBookingSummary();
+    }
+
+    function selectTimeSlot(button, time) {
+      document.querySelectorAll('.time-slot-btn').forEach(b => {
+        b.className = 'time-slot-btn py-2.5 px-3 rounded-xl border border-cream-200 text-xs font-semibold text-charcoal-700 hover:border-amber-400 bg-white';
+      });
+      button.className = 'time-slot-btn py-2.5 px-3 rounded-xl border-2 border-amber-400 text-xs font-bold text-amber-800 bg-butter-100';
+      bookingState.time = time;
+      updateBookingSummary();
+    }
+
+    function handleServiceChange(radio) {
+      bookingState.service = radio.value;
+      // Update radio parent card styling
+      const radios = document.querySelectorAll('input[name="serviceOption"]');
+      radios.forEach(r => {
+        const parent = r.closest('label');
+        if (r.checked) {
+          parent.classList.add('border-amber-400', 'bg-butter-50/70');
+          parent.classList.remove('border-cream-200');
+        } else {
+          parent.classList.remove('border-amber-400', 'bg-butter-50/70');
+          parent.classList.add('border-cream-200');
+        }
+      });
+      document.getElementById('selectedServiceSummary').textContent = bookingState.service;
+      updateBookingSummary();
+    }
+
+    function updateBookingSummary() {
+      const summaryElem = document.getElementById('bookingSummaryLine');
+      if (summaryElem) {
+        summaryElem.textContent = `Selected: ${bookingState.service} on ${bookingState.date || 'upcoming date'} at ${bookingState.time} (PT)`;
+      }
+    }
+
+    // Step Navigation in Booking Card
+    function goToStep(step) {
+      const step1View = document.getElementById('step1View');
+      const step2View = document.getElementById('step2View');
+      const step3View = document.getElementById('step3View');
+      const stepConfirmedView = document.getElementById('stepConfirmedView');
+
+      const pill1 = document.getElementById('stepPill1');
+      const pill2 = document.getElementById('stepPill2');
+      const pill3 = document.getElementById('stepPill3');
+
+      // Hide all steps
+      step1View.classList.add('hidden');
+      step2View.classList.add('hidden');
+      step3View.classList.add('hidden');
+      stepConfirmedView.classList.add('hidden');
+
+      // Reset pill styles
+      const activePillClass = 'flex items-center gap-2 text-xs sm:text-sm font-bold text-amber-700';
+      const inactivePillClass = 'flex items-center gap-2 text-xs sm:text-sm font-semibold text-charcoal-500';
+
+      pill1.className = inactivePillClass;
+      pill2.className = inactivePillClass;
+      pill3.className = inactivePillClass;
+
+      if (step === 1) {
+        step1View.classList.remove('hidden');
+        pill1.className = activePillClass;
+      } else if (step === 2) {
+        step2View.classList.remove('hidden');
+        pill2.className = activePillClass;
+      } else if (step === 3) {
+        step3View.classList.remove('hidden');
+        pill3.className = activePillClass;
+        updateBookingSummary();
+      } else if (step === 4) {
+        stepConfirmedView.classList.remove('hidden');
+      }
+    }
+
+    function submitBooking(e) {
+      e.preventDefault();
+      bookingState.name = document.getElementById('bookingName').value;
+      bookingState.email = document.getElementById('bookingEmail').value;
+      bookingState.phone = document.getElementById('bookingPhone').value;
+      bookingState.city = document.getElementById('bookingCity').value;
+      bookingState.age = document.getElementById('bookingAge').value;
+      bookingState.notes = document.getElementById('bookingNotes').value;
+
+      document.getElementById('confirmService').textContent = bookingState.service;
+      document.getElementById('confirmDateTime').textContent = `${bookingState.date} at ${bookingState.time} (Vancouver / PT)`;
+      document.getElementById('confirmationDetailsText').textContent = 
+        `Thank you ${bookingState.name}! Melissa has reserved your ${bookingState.service} slot. A calendar invitation and clinic telepractice guide have been sent to ${bookingState.email}.`;
+
+      goToStep(4);
+    }
+
+    function resetBooking() {
+      document.getElementById('bookingForm').reset();
+      goToStep(1);
+    }
+
+    // Function called by CTA buttons to open/scroll to booking section & set preset
+    function openBookingModal(serviceName) {
+      // Find matching radio and check it
+      const radios = document.querySelectorAll('input[name="serviceOption"]');
+      radios.forEach(r => {
+        if (r.value.includes(serviceName) || serviceName.includes(r.value)) {
+          r.checked = true;
+          handleServiceChange(r);
+        }
+      });
+
+      goToStep(1);
+
+      // Smooth scroll to the booking section
+      const bookingSec = document.getElementById('booking');
+      bookingSec.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Handle Contact Form Submission with friendly inline notice
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const successMsg = document.getElementById('contactSuccessMsg');
+      successMsg.classList.remove('hidden');
+      e.target.reset();
+      setTimeout(() => {
+        successMsg.classList.add('hidden');
+      }, 7000);
+    }
+
+    // Initialize calendar slots on load
+    window.addEventListener('DOMContentLoaded', () => {
+      populateUpcomingDates();
+    });
+  </script>
+</body>
+</html>
